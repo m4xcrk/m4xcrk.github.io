@@ -12,7 +12,7 @@ As an Offensive Security Engineer and a Technology Enthusiast at large, I spend 
 You can reach me at 👇
 
 [![Blog](https://img.shields.io/badge/Blog-21759B?style=for-the-badge&logo=ghost&logoColor=white)](https://m4xcrk.github.io/)
-[![Profile](https://img.shields.io/badge/Website-38B2AC?style=for-the-badge&logo=webdriverio&logoColor=white)](https://h4rithd.com/)
-[![Twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/h4rithd)
-[![Linkedin:](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/harithdilshan/)
-[![HackTheBox:](https://img.shields.io/badge/hackthebox-a3e54a?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/profile/550483)
+[![Profile](https://img.shields.io/badge/Website-38B2AC?style=for-the-badge&logo=webdriverio&logoColor=white)](https://m4xcrk.github.io/)
+[![Twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/m4xcrk)
+[![Linkedin:](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mounit/)
+[![HackTheBox:](https://img.shields.io/badge/hackthebox-a3e54a?style=for-the-badge&logo=hackthebox&logoColor=black)](https://app.hackthebox.com/profile/581507)
