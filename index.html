@@ -5,93 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>m4xcrk</title>
   <style>
-    /* General reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0d1117; /* dark GitHub-style */
-      color: #e6edf3;
+      background: #0d1117; /* dark GitHub-like theme */
+      color: #c9d1d9;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
       display: flex;
+      justify-content: center;
     }
 
-    /* Sidebar */
-    .sidebar {
-      width: 240px;
-      background: #161b22;
+    .container {
+      width: 850px; /* makes page compact */
+      max-width: 95%;
       padding: 20px;
-      height: 100vh;
-      position: fixed;
-      overflow-y: auto;
-    }
-
-    .sidebar h2 {
-      color: #58a6ff;
-      font-size: 1.2rem;
-      margin-bottom: 15px;
-      border-bottom: 1px solid #30363d;
-      padding-bottom: 5px;
-    }
-
-    .sidebar a {
-      display: block;
-      color: #e6edf3;
-      text-decoration: none;
-      margin: 8px 0;
-      font-size: 0.95rem;
-      transition: color 0.3s;
-    }
-
-    .sidebar a:hover {
-      color: #58a6ff;
-    }
-
-    /* Main content */
-    .content {
-      margin-left: 240px;
-      padding: 30px;
-      flex: 1;
     }
 
     header {
       text-align: center;
-      padding: 30px 20px;
+      padding: 40px 20px;
       background: linear-gradient(135deg, #4facfe, #00f2fe);
-      border-radius: 10px;
+      border-radius: 12px;
+      color: white;
       margin-bottom: 30px;
     }
 
     header h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      margin: 0 0 10px;
     }
 
-    header p {
-      font-size: 1.1rem;
-    }
-
-    section {
-      margin-bottom: 40px;
+    main section {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     h2 {
-      border-bottom: 2px solid #58a6ff;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
+      border-bottom: 2px solid #30363d;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      color: #58a6ff;
     }
 
-    /* Social badges */
     .social-links img {
       height: 35px;
       margin: 5px;
       vertical-align: middle;
     }
 
-    /* Trophies */
     .trophies table {
       width: 100%;
       border-collapse: collapse;
@@ -113,7 +78,6 @@
       transform: scale(1.1);
     }
 
-    /* Coffee */
     .coffee img {
       height: 50px;
     }
@@ -124,35 +88,23 @@
   </style>
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Menu</h2>
-    <a href="#about">👤 About</a>
-    <a href="#social">🌐 Social</a>
-    <a href="#trophies">🏆 Trophies</a>
-    <a href="#support">☕ Support</a>
-  </div>
-
-  <!-- Main Content -->
-  <div class="content">
+  <div class="container">
     <header>
       <h2>😎🤏 Hi, I am Tek (aka m4xcrk)!</h2>
       <p><img src="https://media.giphy.com/media/3XpvBjjMWtYYIOtOlp/giphy.gif" width="70"></p>
-      <p>Glad to see you here! 
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=m4xcrk" alt="visitors">
-      </p>
+      <p>Glad to see you here! <img src="https://visitor-badge.laobi.icu/badge?page_id=m4xcrk" alt="visitors"></p>
       <p>Offensive Security Engineer 🔐 | Technology Enthusiast 💻 | CTF Player 🛠️ | Malware Analyst 🧬</p>
     </header>
 
     <main>
-      <section class="about" id="about">
+      <section class="about">
         <h2>About Me</h2>
-        <p>As an Offensive Security Engineer 🔐 and a Technology Enthusiast 💻 at large, I spend a lot of time debugging 🔍, learning 📚, playing CTFs 🛠️, and writing my blog posts 📝 while working as a professional and trying to get better experience in red teaming 🛡️, pivoting techniques 🔄, AV evasion and analyzing modern malware techniques 🧬. I also put my hands on hardware stuff, including Arduino & Raspberry Pi. I am always looking for a fresh challenge. 🌟</p>
-        <p>Graduated at University of Allahabad, Bachelor of computer Application. From Nepal 🇳🇵.</p>
-        <p>Always looking for a fresh challenge 🌟.</p>
+        <p>As an Offensive Security Engineer 🔐 and a Technology Enthusiast 💻, I spend a lot of time debugging 🔍, learning 📚, playing CTFs 🛠️, and writing blogs 📝 while gaining experience in red teaming 🛡️, pivoting 🔄, AV evasion, and malware analysis 🧬. I also explore Arduino & Raspberry Pi hardware. Always looking for fresh challenges 🌟.</p>
+        <p></p>
+        <p>Graduated from University of Allahabad, Bachelor of Computer Applications. From Nepal 🇳🇵.</p>
       </section>
 
-      <section class="social-links" id="social">
+      <section class="social-links">
         <h2>Connect with Me</h2>
         <a href="https://m4xcrk.github.io/"><img src="https://img.shields.io/badge/Blog-21759B?style=for-the-badge&logo=ghost&logoColor=white" alt="Blog"></a>
         <a href="https://m4xcrk.github.io/"><img src="https://img.shields.io/badge/Website-38B2AC?style=for-the-badge&logo=webdriverio&logoColor=white" alt="Website"></a>
@@ -161,29 +113,29 @@
         <a href="https://app.hackthebox.com/profile/581507"><img src="https://img.shields.io/badge/HackTheBox-a3e54a?style=for-the-badge&logo=hackthebox&logoColor=black" alt="HackTheBox"></a>
       </section>
 
-      <section class="trophies" id="trophies">
+      <section class="trophies">
         <h2>Certifications & Trophies</h2>
         <table>
           <tr>
-            <td><a href="https://www.credential.net"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/OSCP.png?raw=true" alt="OSCP"></a></td>
-            <td><a href="https://aspen.eccouncil.org"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CPENT.png?raw=true" alt="CPENT"></a></td>
-            <td><a href="https://www.credential.net"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/eCPPT.png?raw=true" alt="eCPPT"></a></td>
-            <td><a href="https://www.credential.net"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/eMAPT.png?raw=true" alt="eMAPT"></a></td>
-            <td><a href="https://www.credential.net"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/ICCA.png?raw=true" alt="ICCA"></a></td>
-            <td><a href="https://aspen.eccouncil.org"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH-M.png?raw=true" alt="CEH-M"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/OSCP.png?raw=true" alt="OSCP"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CPENT.png?raw=true" alt="CPENT"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/eCPPT.png?raw=true" alt="eCPPT"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/eMAPT.png?raw=true" alt="eMAPT"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/ICCA.png?raw=true" alt="ICCA"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH-M.png?raw=true" alt="CEH-M"></a></td>
           </tr>
           <tr>
             <td></td>
-            <td><a href="https://app.hackthebox.com/profile"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/dante.png?raw=true" alt="HackTheBox"></a></td>
-            <td><a href="https://aspen.eccouncil.org/"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH-P.png?raw=true" alt="CEH-P"></a></td>
-            <td><a href="https://aspen.eccouncil.org/"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH.png?raw=true" alt="CEH"></a></td>
-            <td><a href="https://www.credential.net/"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CRTS.png?raw=true" alt="CRTS"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/dante.png?raw=true" alt="HackTheBox"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH-P.png?raw=true" alt="CEH-P"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CEH.png?raw=true" alt="CEH"></a></td>
+            <td><a href="#"><img src="https://github.com/m4xcrk/m4xcrk.github.io/blob/main/CRTS.png?raw=true" alt="CRTS"></a></td>
             <td></td>
           </tr>
         </table>
       </section>
 
-      <section class="coffee" id="support">
+      <section class="coffee">
         <h2>Support Me</h2>
         <a href="https://www.buymeacoffee.com/m4xcrk"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-red.png" alt="Buy Me A Coffee"></a>
       </section>
