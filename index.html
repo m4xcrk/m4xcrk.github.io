@@ -7,33 +7,60 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0d1117; /* dark GitHub-like theme */
+      background: #0d1117;
       color: #c9d1d9;
       line-height: 1.6;
       margin: 0;
       padding: 0;
       display: flex;
-      justify-content: center;
     }
 
-    .container {
-      width: 850px; /* makes page compact */
-      max-width: 95%;
+    /* Sidebar */
+    .sidebar {
+      width: 240px;
+      background: #161b22;
       padding: 20px;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      overflow-y: auto;
+      border-right: 2px solid #30363d;
+    }
+
+    .sidebar h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #58a6ff;
+      font-size: 1.1rem;
+    }
+
+    .sidebar p {
+      margin: 5px 0;
+      font-size: 0.95rem;
+    }
+
+    /* Container for main content */
+    .container {
+      flex: 1;
+      max-width: 850px;
+      padding: 20px;
+      margin: 0 auto;
     }
 
     header {
       text-align: center;
       padding: 40px 20px;
-      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      background: #161b22; /* matched page color */
       border-radius: 12px;
-      color: white;
+      color: #c9d1d9;
       margin-bottom: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     header h2 {
       font-size: 2.2rem;
       margin: 0 0 10px;
+      color: #58a6ff;
     }
 
     main section {
@@ -84,10 +111,94 @@
 
     a {
       text-decoration: none;
+      color: #58a6ff;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h3>🐧 Linux</h3>
+    <p>Lateral Movement</p>
+    <p>Privilege Esc Linux 👑</p>
+
+    <h3>🖼️ Windows</h3>
+    <p>Active Directory</p>
+    <p>Lateral Movement</p>
+    <p>Privilege Esc Windows 👑</p>
+
+    <h3>⛅ Cloud</h3>
+    <p>AWS</p>
+    <p>Docker</p>
+    <p>Kubernetes</p>
+    <p>Entra ID (Azure AD)</p>
+
+    <h3>⚒️ Tools</h3>
+    <p>File Transfers</p>
+    <p>Shells / Payloads</p>
+    <p>Pivoting / Forwarding</p>
+    <p>Network Enumeration</p>
+    <p>Cracking / Fuzzing / Brute-force</p>
+
+    <h3>🩻 Forensic</h3>
+    <p>Volatility3</p>
+    <p>Log Analysis</p>
+
+    <h3>📟 TCP</h3>
+    <p>FTP | 21</p>
+    <p>SSH | 22</p>
+    <p>SMTP | 25, 587</p>
+    <p>DNS | 53</p>
+    <p>SMB | 445, 139</p>
+    <p>Redis | 6379</p>
+    <p>Elasticsearch | 9200</p>
+    <p>Memcached | 11211</p>
+
+    <h3>💧 UDP</h3>
+    <p>TFTP | 69</p>
+    <p>SNMP | 161</p>
+    <p>IPsec IKE | 500, 4500</p>
+
+    <h3>🪵 OWASP 10</h3>
+    <p>SQL Injection</p>
+    <p>Command Injection</p>
+    <p>XSS / CSRF / SSTI</p>
+
+    <h3>🎛️ Database</h3>
+    <p>SQLite</p>
+    <p>MSSQL / MySQL / PSQL</p>
+
+    <h3>🔗 Binary Exploitation</h3>
+    <p>Linux</p>
+    <p>Windows</p>
+
+    <h3>⛓️ Languages</h3>
+    <p>Go</p>
+    <p>.Net / .NetCore</p>
+    <p>PHP / Perl / asp/x</p>
+    <p>Python / Bash</p>
+    <p>React / React Native</p>
+    <p>Node.js</p>
+    <p>Ruby</p>
+
+    <h3>🍄 Other</h3>
+    <p>Git</p>
+    <p>WiFi</p>
+    <p>Steganography</p>
+    <p>CMS / Servers</p>
+
+    <h3>🍎 RedTeam</h3>
+    <p>Reconnaissance</p>
+    <p>Initial Access</p>
+    <p>Persistence</p>
+    <p>AV Evasion</p>
+  </aside>
+
+  <!-- Main Content -->
   <div class="container">
     <header>
       <h2>😎🤏 Hi, I am Tek (aka m4xcrk)!</h2>
@@ -100,7 +211,6 @@
       <section class="about">
         <h2>About Me</h2>
         <p>As an Offensive Security Engineer 🔐 and a Technology Enthusiast 💻, I spend a lot of time debugging 🔍, learning 📚, playing CTFs 🛠️, and writing blogs 📝 while gaining experience in red teaming 🛡️, pivoting 🔄, AV evasion, and malware analysis 🧬. I also explore Arduino & Raspberry Pi hardware. Always looking for fresh challenges 🌟.</p>
-        <p></p>
         <p>Graduated from University of Allahabad, Bachelor of Computer Applications. From Nepal 🇳🇵.</p>
       </section>
 
